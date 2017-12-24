@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	  <!-- Custom Favicon -->
+	  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+	  <!-- Custom Fonts -->
+	  <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+	  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	  <link href="https://fonts.googleapis.com/css?family=Bungee|Rubik+One|Proza+Libre" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	  <link href="../css/grayscale.min.css" rel="stylesheet">
+	  <link href="../css/randystyle.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="center">
+		<h2>Web Hosting</h2>
+
+
+		<h3>Hosting a website on Amazon Web Services (AWS)</h3>
+
+		<p>
+		Although I see a lot of web applications made during hackathons, I see a fewer number that’s actually hosted on the web. Understanding the hosting process can be difficult for many hackers, so I decided to go over the basics of making a Node web app accessible on the world wide web. This link is less about a project than the other ones, and more focused on providing a guided run-through of how one might get their website up and running quickly.
+
+		For this project, I will be using the Express.js framework downloaded through the npm package manager on Node. If you would like to know more about Node, I would suggest checking out this Node presentation I made for a past presentation. You can download the presentation here: <a href="https://lookaside.fbsbx.com/file/Node.js.pdf?token=AWwHrelfdRyw9LWf9IfQn-s_rp2T1guip_dYEEpFYm0ENcEOjgseLBMKA5qJa-pnXVk_Ih1p3t3p2GgPSTzewmLAei5j_NQITrwEFTu8vszZja6Ms5ausHJa0PoS08Si_u6UlIGRKFpYvF_4wT9tH14xog0-2gNIysryNcetm5QplberQcPx2VXjCF96uQ-USJRyqqJYFHIl6mDlqYehG98A">Randy’s Node Presentation Slides</a>. More resources will also be provided below.
+		</p>
+
+		<h3>Node</h3>
+
+		<p>
+		Node.js is one of many software alternatives that allow a computer to give a user files when they enter a url in their browser. In this project, we will be using it to give the desired files to the user who enters the url in the browser.
+		</p>
+
+		<h3>AWS</h3>
+		<p>
+		As defined by Google, “Amazon Web Services is a subsidiary of Amazon.com that provides on-demand cloud computing platforms to individuals, companies and governments.” As said by a former professor, cloud computing is just a fancy way to say “a computer elsewhere doing work for you.” This means that cloud services basically just give you access to computing resources (that might be too expensive or tedious to build yourself) over the internet. In this case, we’ll be requesting an AWS ‘instance’ (which is a server computer provided by Amazon servers over the internet).
+		</p>
+
+		<h3>HTML/CSS/Javascript</h3>
+
+		<p>
+		This tutorial project will require knowledge of the HTML and CSS markup languages, and beginner level understanding of Javascript. In this project, we’ll be focusing solely on the front-end as a back-end isn’t necessary for the purposes of demonstrating how to host a website. 
+		</p>
+
+
+
+		<h3>Project Implementation</h3>
+
+			<ol>
+			<li>
+			The first thing I’m going to need you to do, is find a Node project to use. If you can't find one, <a href=""> fork </a> and <a href="https://help.github.com/articles/cloning-a-repository/"> clone </a> this link to a folder on your computer that you're comfortable with.
+			</li>
+
+			<li>
+			Now what I’m going to need you to do is <a href="https://help.github.com/articles/create-a-repo/"> create a github project</a> and <a href="https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/">commit and push your Node project into the repository </a>. This will be the premade project referenced in the previous step or the pre-existing Node project that you made from scratch.
+			</li>
+
+			<li>
+			Next, we’re going to go to the <a href="https://aws.amazon.com/"> AWS website </a>, and <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-launch-instance">start a new ‘instance’</a>. Don’t forget to save your ‘.pem’ file!!
+			</li>
+
+			<li>
+			Now we’re going to need to <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-connect-to-instance-linux">SSH into our server</a> and <a href=""> install Node</a> (this part might get kind of tedious)
+			</li>
+
+			<li>
+			Now that Node is installed, we can deploy our project! To start, <a href="https://help.github.com/articles/cloning-a-repository/">clone your repository</a> into the server you SSH’ed into.
+			</li>
+
+			<li>
+			Now <a href="https://www.digitalcitizen.life/command-prompt-how-use-basic-commands">cd</a> into the folder you have your content cloned into.
+			</li>
+
+			<li>
+			Finally we run your project. Usually, you would type <a href="http://nodeguide.com/beginner.html#your-first-program">‘node’ and your server file name to start the program</a>, but this time you’re going to type <a href="https://stackoverflow.com/questions/4797050/how-to-run-process-as-background-and-never-die">‘nohup’ followed by your server file name and a space and ampersand</a>.
+			Exit out of your server by typing ‘exit’. You’re site has now technically been launched. Now we just have to do a few things on the AWS configuration side to figure the rest of the stuff out.
+			</li>
+
+			<li>
+			Go to the EC2 console and select your security group
+			</li>
+
+			<li>
+			Change inbound connections to allow port 80
+			Find the IP address of your server
+			You’re good to go! Now your website can be viewed from the web!
+			</li>
+		</ol>
+	</div>
+	</body>
+</html>
