@@ -1,3 +1,22 @@
 html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
     font-family: 'Rosario', sans-serif !important;
+}
+.container {
+    font-size: 1vw;
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
