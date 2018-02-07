@@ -1,6 +1,8 @@
 html, body {
     height: 100%;
     width: 100%;
+    padding: 0;
+    margin: 0;
     overflow-x: hidden;
     font-family: 'Rosario', sans-serif !important;
 }
@@ -19,4 +21,12 @@ html, body {
     height:100%;
     width:100%;
     position:absolute;
+}
+#partners {
+    padding: 10%;
+}
+#faqs {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 5%;
 }

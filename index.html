@@ -15,16 +15,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-    <link href="css/index.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Megrim|Rosario" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Rosario" rel="stylesheet">\
     <script defer src="js/index.js"></script>
   </head>
   <body>
-    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000;@media(max-width: 767px){width:1000px;right:0px;max-width:20px;min-width:10px;position:fixed;width:10%;z-index:10000}" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&amp;utm_medium=TrustBadge&amp;utm_campaign=na-2018&amp;utm_content=white" target="_blank">
-      <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%">
-    </a>
     <section class="hero is-black is-fullheight has-text-centered">
+      <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000;@media(max-width: 767px){width:1000px;right:0px;max-width:20px;min-width:10px;position:fixed;width:10%;z-index:10000}" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&amp;utm_medium=TrustBadge&amp;utm_campaign=na-2018&amp;utm_content=white" target="_blank">
+        <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%">
+      </a>
       <div class="hero-body">
         <div class="container">
           <h1 style="font-size: 10em;font-family: 'Megrim', cursive;">
@@ -37,7 +37,7 @@
       </div>
     </section>
     <section>
-      <div class="columns" style="padding: 10%;">
+      <div idclass="columns" style="padding: 5%;">
         <div class="column is-half">
           <h2 class="title">WHERE:</h2>
           <label class="subtitle">
@@ -59,7 +59,7 @@
             By registering <a href="https://form.jotform.co/73574979575883">here</a>! ;)
           </label>
         </div>
-        <div class="column">
+        <div class="column is-half">
             <div class="map-responsive">
               <iframe
                 width="600"
@@ -72,12 +72,65 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="partners" class="title has-text-centered">
+      <h2>Partners</h2>
+      <div class="columns">
+        <div class="column">
+          <img src="img/aiche.jpg" />
+        </div>
+        <div class="column"></div>
+        <div class="column">
+          <img src="img/ieee.jpg" height="300" width="150"/>
+        </div>
+      </div>
+    </section>
+    <section id="faqs">
       <h2 class="title has-text-centered">FAQs</h2>
       <br/>
+      <div class="columns">
+        <div class="column">
+          <h3 class="title">Can I attend this event?</h3>
+          <p>
+            Sure! If you are in the DMV and are at least 18 years of age you are welcome to come.
+          </p>
+        </div>
+        <div class="column">
+          <h3 class="title">How much does it cost?</h3>
+          <p>
+            AfroHacks is 100% free of charge to all registrants.
+          </p>
+        </div>
+        <div class="column">
+          <h3 class="title">How do I get there?</h3>
+          <p>
+            Feel free to Uber into the area or take the Metro! If you decided to metro here be sure to get on the Green line and take it to the Shaw/Howard stop. Lewis K. Downing Hall is about a 10 minute walk from the station.
+          </p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <h3 class="title">What will I eat?</h3>
+          <p>
+            We'll provide food for all meals from Friday's dinner to Saturday's dinner. If you have dietary restrictions we will try our best to accommodate them. Also there will be tons of snacks and drinks.
+          </p>
+        </div>
+        <div class="column">
+          <h3 class="title">What should I bring?</h3>
+          <p>
+            Please bring a valid form of identification and a laptop. If you want to be comfortable we suggest also brining a blanket, pillows and slippers.
+          </p>
+        </div>
+        <div class="column">
+          <h3 class="title">I have a question that wasn't answered here.</h3>
+          <p>
+            Please email us at <a href="mailto:afrohackshu@gmail.com">afrohackshu@gmail.com</a>. We'd love to help out!
+          </p>
+        </div>
+      </div>
     </section>
   </body>
   <footer class="footer has-text-centered">
     <h2 class="subtitle">&copy; Copyright Howard University ACM Student Chapter</h2>
+    <a href="https://twitter.com/afrohackshu"><span class="fa fa-twitter fa-2x"></span></a>
   </footer>
 </html>
