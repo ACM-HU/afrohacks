@@ -30,3 +30,7 @@ html, body {
     padding-right: 10%;
     margin-bottom: 5%;
 }
+
+.btn-secondary {
+  color: #E2782E !important;
+}
