@@ -30,7 +30,13 @@ html, body {
     padding-right: 10%;
     margin-bottom: 5%;
 }
-
-.btn-secondary {
-  color: #E2782E !important;
+#register-anchor:hover {
+    text-decoration: none;
+}
+#register-btn {
+    background:#E2782E;
+    color:white;
+}
+#register-btn:hover {
+    top: -2px;
 }
